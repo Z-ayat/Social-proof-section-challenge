@@ -1,0 +1,100 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: "Spartan";
+}
+
+:root {
+    --Very-Dark-Magenta: hsl(300, 43%, 22%);
+    --Soft-Pink: hsl(333, 80%, 67%);
+    --Neutral-Dark-Grayish-Magenta: hsl(303, 10%, 53%);
+    --Light-Grayish-Magenta: hsl(300, 24%, 96%);
+    --White: hsl(0, 0%, 100%);
+}
+
+body {
+    display: flex;
+    min-height: 100vh;
+    justify-content: center;
+}
+
+
+/* Brief Section */
+
+h2 {
+    font-weight: 700;
+    color: var(--Very-Dark-Magenta);
+}
+
+p {
+    color: var(--Neutral-Dark-Grayish-Magenta);
+    font-size: 15px;
+    font-weight: 400;
+}
+
+
+/* Rating Section */
+
+.rated {
+    background-color: var(--Light-Grayish-Magenta);
+}
+
+.rated p {
+    color: var(--Very-Dark-Magenta);
+    font-weight: 700;
+}
+
+.profile-pic {
+    transform: scale(0.6);
+    -webkit-transform: scale(0.6);
+    -moz-transform: scale(0.6);
+    -ms-transform: scale(0.6);
+    -o-transform: scale(0.6);
+}
+
+.purchaser {
+    background-color: var(--Very-Dark-Magenta);
+    max-height: 250px;
+}
+
+.purchaser .username {
+    color: var(--White);
+    font-weight: 500;
+}
+
+.purchaser .user-ver {
+    font-weight: 500;
+    color: var(--Soft-Pink);
+}
+
+.purchaser .opinion {
+    color: var(--White);
+    font-weight: 400;
+}
+
+.stars-container {
+    margin-right: -30px;
+}
+
+@media (min-width:1199px) {
+    .purchasers-opinion {
+        justify-content: space-between !important;
+    }
+    .purchaser {
+        max-width: 360px;
+    }
+}
+
+footer {
+    margin-top: 3rem;
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
